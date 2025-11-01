@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+dist/
+*.log
+.pnpm-debug.log
+
+# Coverage
+coverage/
+
+# Changesets
+.changeset/*.md
+!.changeset/README.md
