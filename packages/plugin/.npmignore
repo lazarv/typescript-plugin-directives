@@ -1,0 +1,26 @@
+# Source files (compiled to dist/)
+src/
+
+# Tests
+tests/
+*.test.ts
+*.spec.ts
+coverage/
+.vitest/
+
+# Development files
+tsconfig.json
+tsdown.config.ts
+vitest.config.ts
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+*.tsbuildinfo
+
+# Misc
+.DS_Store
+*.log
+node_modules/
