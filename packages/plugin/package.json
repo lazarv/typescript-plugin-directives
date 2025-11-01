@@ -1,0 +1,49 @@
+{
+  "name": "typescript-plugin-directives",
+  "version": "0.0.0",
+  "description": "TypeScript LS plugin adding inline hints and hover info for \"use …\" directives",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./global": {
+      "types": "./types/global.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "global.d.ts"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "typescript",
+    "plugin",
+    "directives",
+    "inlay",
+    "hover",
+    "intellisense"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsdown": "^0.2.15",
+    "typescript": "^5.7.2"
+  }
+}
